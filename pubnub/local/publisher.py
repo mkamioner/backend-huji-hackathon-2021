@@ -5,8 +5,8 @@ from pubnub.pubnub import PubNub
 
 CHANNEL = "backend-session"
 PN_CONFIG = PNConfiguration()
-PN_CONFIG.publish_key = "pub-c-3976abaa-8a0b-4b4b-8247-9904e9470a26"
-PN_CONFIG.subscribe_key = "sub-c-0a592c68-ae3a-11eb-9538-227feadbaa58"
+PN_CONFIG.publish_key = "YOUR_PUBLISH_KEY"
+PN_CONFIG.subscribe_key = "YOUR_SUBSCRIPTION_KEY"
 
 
 def main():

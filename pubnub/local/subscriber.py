@@ -8,7 +8,7 @@ from pubnub.pubnub import PubNub
 
 CHANNEL = "backend-session"
 PN_CONFIG = PNConfiguration()
-PN_CONFIG.subscribe_key = "sub-c-0a592c68-ae3a-11eb-9538-227feadbaa58"
+PN_CONFIG.subscribe_key = "YOUR_SUBSCRIPTION_KEY"
 
 
 class MySubscribeCallback(SubscribeCallback):
