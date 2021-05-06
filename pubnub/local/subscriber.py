@@ -5,6 +5,7 @@ from pubnub.enums import PNStatusCategory
 from pubnub.pnconfiguration import PNConfiguration
 from pubnub.pubnub import PubNub
 
+from talker import say_my_name
 
 CHANNEL = "backend-session"
 PN_CONFIG = PNConfiguration()
@@ -20,6 +21,7 @@ class MySubscribeCallback(SubscribeCallback):
         print(
             f"[{event.timetoken}] ({event.message['sender']}): {event.message['text']}"
         )
+        say_my_name(event.message['text'])
 
 
 def main():
